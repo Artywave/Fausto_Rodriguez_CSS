@@ -1,0 +1,226 @@
+body{
+  background: #02010a;
+}
+.menu ul li{
+  display: inline;
+}
+.menu ul li a:active{
+  text-decoration: none;
+}
+/*Animacion al cargar la pagina*/
+.contenedor{
+  animation: slide_up 1s;
+}
+@keyframes slide_up {
+0%{
+  transform: translateY(250px);
+}
+100%{
+  text-transform: translateY(0);
+}
+}
+/*_______________________________________*/
+
+/*Propiedades de nombre y menu*/
+.nombre h1{
+  font-family: 'Dancing Script';
+  color: #ffff;
+  text-align: center;
+  text-shadow: 2px 2px #02010a;
+  box-sizing: border-box;
+}
+.menu ul li a{
+  font-family: 'Dancing Script';
+  font-size: 20px;
+  color: #ffff;
+  padding: 5px;
+  box-sizing: border-box;
+}
+nav{
+  text-align: right;
+  padding: 3px;
+  box-sizing: border-box;
+}
+/*_______________________________________*/
+/*Propiededes del contenido de footer*/
+h3{
+  text-align: left;
+  margin: auto;
+}
+.piedepag p{
+  text-align: left;
+  font-size: 15px;
+  padding-left: 0.5px;
+}
+div .a1, .a2, .a3, .a4{
+font-family: 'Dancing Script';
+font-weight: bold;
+}
+.a3 p img{
+  width: 16px;
+  height: 16px;
+  box-shadow: none;
+}
+/*_______________________________________*/
+/*Responsive cabecera*/
+.cabecera{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.nombre, .menu{
+  width: 100%;
+  text-align:center;
+  padding: 3px;
+  box-sizing: border-box;
+}
+@media (min-width: 900px){
+  .nombre{
+    width: 60%;
+  }
+  .menu{
+    width: 40%;
+  }
+  .cabecera{
+    width: 900px;
+  }
+}
+/*_______________________________________*/
+
+/*Proiedades de las cajas de imagenes */
+.imagen1 img{
+  width: 90%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 3%
+}
+.imagen2 img{
+  width: 85%;
+  height: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  box-sizing: border-box;
+}
+.imagen3 img{
+  width: 85%;
+  height: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  box-sizing: border-box;
+}
+h2{
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+/*----------------------------------------*/
+/*Efectos de imagenes*/
+img{
+  box-shadow: 2px 2px #02010a;
+}
+.imagen2 img{
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+.imagen2 img:hover{
+   transform: rotateZ(10deg);
+   border-right: 2px solid;
+   box-shadow: 2px 2px #82c3a6;
+}
+.imagen3 img{
+  rotateZ: 0.5s;
+  margin-bottom: 30px;
+}
+.imagen3 img:hover{
+  margin-right: 20px;
+  margin-top: 5px;
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid;
+}
+
+
+
+/*_______________________________________*/
+/*contenedor general*/
+.contenedor{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.contenedor{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.cabecera{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+.imagen1{
+  background: #82c3a6;
+  height: 350px;
+}
+.imagen2{
+  background: #d5c75f;
+}
+.imagen3{
+  background: #d5c75f;
+}
+.piedepag{
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  height: auto;
+}
+div .cabecera, .imagen1, .imagen2, .piedepag{
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .cabecera{
+    width: 100%;
+  }
+  .imagen1{
+    width: 100%;
+  }
+  .imagen2, .imagen3{
+    width: 50%
+  }
+  .piedepag{
+    width: 100%
+  }
+  .contenedor{
+    width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Termina el contenedor general*/
+  /*Pie de pagina*/
+
+  .piedepag{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  div .a1, .a2, .a3, .a4{
+    width: 100%;
+    text-align: center;
+    font-family: 'Dancing Script';
+    margin-left: auto;
+  }
+
+  @media (min-width: 900px) {
+    div .a1, .a2, .a3, .a4{
+      width: 22%;
+      margin-left: auto;
+    }
+  .piedepag{
+    width: 900px;
+  }
+
+  /*_______________________________________*/
